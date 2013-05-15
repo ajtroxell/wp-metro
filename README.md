@@ -10,7 +10,7 @@ Licenses
 
 - The WP Metro font is licensed under [SIL OFL 1.1](http://scripts.sil.org/OFL)
 - No attribution is required but would be nice
- - `WP Metro by AJ Troxell &mdash; http://wpmetro.ajtroxell.com`
+ - `WP Metro by AJ Troxell - http://wpmetro.ajtroxell.com`
 
 Versioning
 ------
