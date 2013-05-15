@@ -1,0 +1,203 @@
+/* ===========================================================================
+	Includes
+	========================================================================== */
+	@import "_reset.less";
+	@import "_variables.less";
+	@import "_mixins.less";
+	* {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+/* ===========================================================================
+	General
+	========================================================================== */
+	html {
+		font-size: 62.5%;
+	}
+
+	body {
+		font-family: sans-serif;
+		color: @text;
+		background: @background;
+		font-family:'Ubuntu',Corbel,Arial,Helvetica,"Nimbus Sans L","Liberation Sans",sans-serif;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	a, a:visited {
+		color: @orange;
+		text-decoration: none;
+	}
+
+	a:hover, a:focus {
+		color: @dark-orange;
+	}
+
+	.clearfix:before, .clearfix:after {
+		content: "";
+		display: table;
+	}
+
+	.clearfix:after, .clear {
+		clear: both;
+	}
+
+	section, header, footer {
+		display: block;
+	}
+
+	.wrap {
+		margin: 1em auto 4em auto;
+		padding: 0px 2%;
+		width: 80%;
+		background: @white;
+		border-top: 4px solid @orange;
+		border-bottom: 4px solid @orange;
+	}
+
+	.btn-wrap {
+		display: block;
+		text-align: center;
+	}
+
+	a.btn {
+		display: inline-block;
+		margin: 10px auto;
+		padding: 1em 2em;
+		.font-size(16);
+		color: @white;
+		font-weight: bold;
+		text-decoration: none;
+		text-align: center;
+		background: @orange;
+		.border-radius(5px);
+
+		&:hover {
+			background: @dark-orange;
+			text-decoration: none;
+		}
+
+	}
+
+	p {
+		.font-size(16);
+	}
+
+/* ===========================================================================
+	Header
+	========================================================================== */
+	header {
+		margin: 1em 0px 2em 0px;
+		padding: 0px 0px 2em 0px;
+		border-bottom: 1px solid @border;
+
+		h1 {
+			.font-size(60);
+			font-weight: normal;
+			color: @header;
+
+			span {
+				.font-size(10);
+				color: @sub-head;
+			}
+		}
+
+		p {
+			.font-size(12);
+			color: @sub-head;
+		}
+
+		&.class-names {
+			margin: 2em 0px 1em 0px;
+			padding: 0;
+		}
+	}
+
+/* ===========================================================================
+	Parent
+	========================================================================== */
+	ul.social {
+		margin: 1em auto 0 auto;
+		padding: 0px 2%;
+		width: 80%;
+		list-style: none;
+		text-align: right;
+
+		li {
+			display: inline-block;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+
+	}
+
+/* ===========================================================================
+	Glyphs
+	========================================================================== */
+	.glyph {
+		margin: 0px 2% 2% 0px;
+		padding: 1em;
+		width: 15%;
+		float: left;
+		.font-size(16);
+		text-align: center;
+		background: @background;
+		border: 1px solid @border;
+
+		&:nth-child(6n+7) {
+	        margin-right: 0px;
+	    }
+
+		input {
+			font-family: 'Ubuntu Mono', consolas, monospace, sans-serif;
+			.font-size(13);
+			width: 100%;
+			text-align: center;
+			color: @text;
+			border: 1px solid @border;
+			padding: .125em;
+		}
+
+	}
+
+	.fs1 {
+		.font-size(46);
+	}
+
+/* ===========================================================================
+	Class Names
+	========================================================================== */
+	.box1 {
+		display: inline-block;
+		margin: 0px 2% 2% 0px;
+		padding: 5px;
+		width: 18.4%;
+		float: left;
+		.font-size(13);
+		background: @background;
+
+		&:nth-child(5n+6) {
+	        margin-right: 0px;
+	    }
+
+	}
+
+	footer {
+		margin-top: 2em;
+		padding: 1.5em 0;
+		border-top: 1px solid @border;
+
+		p {
+			.font-size(10);
+
+			small {
+				.font-size(9);
+				color: @sub-head;
+			}
+
+		}
+
+	}
